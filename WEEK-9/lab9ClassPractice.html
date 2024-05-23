@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:  rgb(237, 227, 229);
+        }
+        #logout{
+            margin-left: 26px;
+            background-color: burlywood;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to dashboard</h1>
+    <h2> you are logged in</h2>
+    <button id="logout">Log Out</button>
+        <script>
+    const b  = localStorage.getItem("check")
+     console.log(b)
+     const btn = document.getElementById("logout")
+     btn.onclick = logout
+     function logout(){
+        window.location.href = 'lab9Task1Login.html'
+        localStorage.setItem("check",false)
+     }
+        </script>
+</body>
+</html>
