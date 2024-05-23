@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="container.css">
+</head>
+<body>
+    <script>
+    console.log('this is a javascript')
+    console.log('hi there again javascript')
+    name = "pari"
+    console.log(name)
+    var colors = ["red", "green", "blue"];
+    let myobj = {
+        name: "manat",
+        cms: "021-21-0002",
+        address:{
+            streetno: 2,
+            city: "ghk",
+        }
+    }
+    console.log(myobj)
+    keys = Object.keys(myobj)
+    console.log(keys)
+    console.log(myobj[keys[0]])
+    for (key in myobj){
+        console.log(myobj[key])
+    }
+     for( c in colors){
+        console.log(colors[c])
+     }
+     names = ["pari","kiran","bhoomi","radhika"]
+     console.log("the length of array is "+ names.length)
+     console.log(names.pop())
+     console.log(names.push("sakshi","kashish"))
+     for( c in names){
+        console.log(names[c])
+     }
+     n = colors.concat(names)
+     console.log("the length of array is "+ n.length)
+     for( c in n){
+        console.log(n[c])
+     }
+     s = n.splice(6,2,"no","nonoe")
+     console.log(s)
+     console.log(n)
+     console.log(n.includes("pari"))
+      w = n.slice(0,3)
+      console.log(n)
+     console.log(w)
+
+
+     dic = {
+        name: "pari",
+        cms:"021-21-0002",
+        address:{
+            city:"daharki",
+            colony:"krishan nager"
+        }
+     }
+     console.log(Object.keys(dic))
+     console.log(Object.values(dic))
+     console.log(Object.entries(dic))
+     dic2 = {
+        education:"undergraduate",
+        dob:"15-4-2001"
+     }
+     Object.assign(dic,dic2)
+     console.log(Object.keys(dic))
+    Object.seal(dic)
+    dic3 = {
+       star:"tauraus"
+    }
+    console.log(Object.keys(dic2))
+     delete dic2.dob
+     console.log(Object.keys(dic2))
+
+     const ar = [1, 2, 3, 4, 5,6,7,8,9,10];
+     
+     function mul(ar){
+        em = []
+        for(i=0;i<10;i++){
+            em[i] = ar[i]*2
+        }
+        return em
+     }
+     
+
+     console.log(mul(ar))
+
+   
+     console.log(ar.map(function(item){
+       return item*3
+     }))
+    /*console.log(ar.filter(function(item){
+      item%2==0
+    }))
+    */
+    sem  = ["go", "get", "it"]
+    console.log(sem.filter(item  =>item.includes("e") ))
+
+   console.log(ar.filter(item  =>item%3 ))
+   console.log(ar.reduce((total, item)=>{
+   return total+item;
+   },0))
+
+
+
+</script>
+
+
+</body>
+</html>
