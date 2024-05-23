@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            background-color: aqua;
+            flex-wrap: wrap;
+
+
+
+
+
+        }
+        .ball{
+            width: 15px;
+            height: 15px;
+            background-color: palevioletred;
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">
+        heading1
+    </h1>
+    <h2 id="h2">
+        heading2
+    </h2>
+    <p id="p1">
+        Paragraph1
+    </p>
+    <p id="p2">
+        paragraph2
+    </p>
+    <button id = b1>
+       Iam a button
+    </button>
+    <div id = 'container'>
+        
+    </div>
+</body>
+<script>
+    const h1  = document.getElementById("h1")
+    h1.style.color = 'red'
+    const b1 = document.getElementById("b1")
+    b1.style.backgroundColor = 'red'
+    b1.style.width = '50px'; // Set the width to 150 pixels
+    b1.style.height = '50px';
+   
+    
+    
+    function buttonpressed(){
+        const container =document.getElementById("container")
+       const ball=document.createElement('div')
+        ball.className="ball"
+        container.appendChild(ball)
+    }
+    b1.onclick = buttonpressed
+   
+
+
+
+    
+</script>
+</html>
