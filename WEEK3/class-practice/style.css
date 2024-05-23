@@ -1,0 +1,71 @@
+.myclass{
+    border-radius: 10px;
+    padding: 10px;
+   
+    background-color: pink;
+    text-decoration-color: aquamarine;
+}
+
+.myclass:hover{
+  background-color: blueviolet;
+  text-transform: capitalize;
+}
+.customname > span:first-child{
+    background-color: aqua;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+.parent{
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.child{
+    position: absolute; 
+    top:-130px;
+    left:-100px;
+    background-color: greenyellow;
+    width: 200px;
+    height: 200px;  
+}
+.customFont{
+    font-family: 'Sixtyfour', sans-serif;
+    visibility: hidden;
+
+}
+div span{
+    width: 50px;
+    height:50px;
+    background-color: gray;
+    display: block;
+}
+.container{
+    background-color: bisque;
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    border-radius: 50px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+}
+.inner:first-child{
+
+ background-color: green;
+ display: inline;
+ border-radius: 10px;
+ margin: 5px;
+ 
+}
+.inner:last-child{
+
+    background-color: red;
+    display: inline;
+    border-radius: 10px;
+    margin: 5px;
+    
+   }
