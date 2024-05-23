@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #minus{
+         width: 50px;
+         height: 50px;
+         background-color: aqua;
+         margin: 10px;
+        }
+        #plus{
+            width: 50px;
+         height: 50px;
+         background-color: aqua; 
+         margin: 10px;
+        }
+        #label{
+            width: 50px;
+         height: 50px;
+         background-color: rgb(0, 255, 89);  
+         margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="minus">
+     -
+    </button>
+    <label id="label" for="num">
+        
+    </label>
+    <button id="plus">
+     +
+    </button>
+</body>
+<script>
+    const add = document.getElementById("plus");
+    const sub = document.getElementById("minus")
+    const l = document.getElementById("label")
+    add.onclick = inc;
+    sub.onclick = dec;
+    let num =  localStorage.getItem(l) ;
+    label.innerHTML = num;
+    function inc(){
+    
+     num++;
+     l.innerHTML =num;
+     localStorage.setItem(l,num);
+     
+    }
+    function dec(){
+        num--;
+     l.innerHTML =num; 
+     localStorage.setItem(l,num);
+    }
+
+    
+</script>
+</html>
