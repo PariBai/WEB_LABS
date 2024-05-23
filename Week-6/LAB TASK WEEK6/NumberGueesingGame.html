@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Number Guessing Game</h1>
+  <p>Guess a number between 1 and 100:</p>
+  <input type="number" id="guessInput" min="1" max="100">
+  <button onclick="checkGuess()">Guess</button>
+  <p id="result"></p>
+  <p id="myid"></p>
+</div>
+
+<script>
+  const myp = document.getElementById("myid")
+secretNumber = Math.floor(Math.random() * 100) + 1;
+console.log(secretNumber)
+myp.innerText = secretNumber;
+let attempts = 0;
+
+
+
+function checkGuess() {
+  const guessInput = document.getElementById("guessInput");
+  const guess = parseInt(guessInput.value);
+  
+  if (isNaN(guess) || guess < 1 || guess > 100) {
+    alert("Please enter a valid number between 1 and 100.");
+    return;
+  }
+
+  attempts++;
+
+  if (guess === secretNumber) {
+    document.getElementById("result").innerText = `Congratulations! You guessed the number in ${attempts} attempts.`;
+   
+  } else if (guess < secretNumber) {
+    document.getElementById("result").innerText = "Too low! Try again.";
+  } else {
+    document.getElementById("result").innerText = "Too high! Try again.";
+  }
+
+  guessInput.value = "";
+
+}
+let name = prompt("Please enter your name:");
+if (name) {
+  console.log("Hello, " + name + "!");
+} else {
+  console.log("No name entered.");
+}
+
+
+
+</script>
+</body>
+</html>
