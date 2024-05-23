@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d50767; /* Pink background color */
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1, h2, p {
+    margin: 0;
+    
+}
+h2{
+    margin-bottom: 5%;
+}
+p{
+    font-size: 22px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    margin-top: 50px; 
+    font: size 200px;;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.white-bg {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    flex: 0 0 30%; Adjust the width of the profile picture column
+    max-width: 100%; 
+    width: 150px;     
+    height: auto;     
+    border-radius: 5px; 
+}
+.text-content {
+    flex: 0 0 70%; 
+    max-width: 100%; 
+    margin-left: 20px; 
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
